@@ -2,7 +2,10 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send({hi: 'Inge and Gali and Cito'});
+    res.send({
+        hi: 'Inge and Gali and Cito',
+        hola: 'Saludos prueba'
+    });
 });
 //Set port variable with Heroku
 const PORT = process.env.PORT || 5000;
