@@ -1,9 +1,14 @@
 
 const express = require('express');
+const mongoose = require('mongoose');
 // const passportConfig = require('./services/passport');
 require('./services/passport');
+const keys = require('./config/keys')
+
+mongoose.connect(keys.mongoURI);
 
 const app = express();
+
 
 //is the same as // const authRoutes = require('./routes/authRoutes');
 // authRoutes(app);
