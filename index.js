@@ -3,8 +3,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const keys = require('./config/keys')
 // const passportConfig = require('./services/passport');
+require('./models/Users')
 require('./services/passport'); // Require will invocate the code in this file
-require('.models/Users')
 
 
 mongoose.connect(keys.mongoURI);
