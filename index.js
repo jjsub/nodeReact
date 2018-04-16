@@ -1,9 +1,11 @@
 
 const express = require('express');
 const mongoose = require('mongoose');
-// const passportConfig = require('./services/passport');
-require('./services/passport');
 const keys = require('./config/keys')
+// const passportConfig = require('./services/passport');
+require('./services/passport'); // Require will invocate the code in this file
+require('.models/Users')
+
 
 mongoose.connect(keys.mongoURI);
 
