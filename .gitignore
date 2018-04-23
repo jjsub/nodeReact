@@ -1,5 +1,7 @@
 node_modules
-keys.js
+dev.js
+
+
 ### Node ###
 # Logs
 logs
