@@ -13,6 +13,8 @@ mongoose.connect(keys.mongoURI);
 
 const app = express();
 
+// app.use this is how middleware are define with express... This mean that app.use will run everytime and before every time a app.use is executed
+
 app.use(
   cookieSession({
     //30 days in miliseconds
