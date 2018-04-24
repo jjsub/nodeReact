@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": {
+    "notes-about-proxy": "Proxy is a dev setup to proxy to the server. In production this proxy is no need it because in production there is no webpack/node server running for the front end. Webpack will create a static bundle for prduction in the public folder",
     "/auth/google": {
       "target": "http://localhost:5000"
     }
